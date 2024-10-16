@@ -1,17 +1,14 @@
 package hello.core.order;
 
 import hello.core.discount.DiscountPolicy;
-import hello.core.discount.FixDiscountPolicy;
-import hello.core.discount.RateDiscountPolicy;
 import hello.core.member.Member;
 import hello.core.member.MemberRepository;
-import hello.core.member.MemoryMemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService {
     // 필드 주입
     @Autowired
@@ -33,8 +30,8 @@ public class OrderServiceImpl implements OrderService {
     }
 
 
-    //public OrderServiceImpl() {
-    //}
+    public OrderServiceImpl() {
+    }
 
     // 생성자 주입 방법(불변, final)
     @Autowired
